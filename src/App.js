@@ -9,10 +9,9 @@ class App extends Component {
         numbers: []
     };
 
-    // getSort = (array) => {
-    //     let n;
-    //     return n;
-    // };
+    getSort = (array) => {
+        return array.sort((a, b) => a - b);
+    };
 
     getRandomNumbers = () => {
         let array = [];
@@ -22,8 +21,7 @@ class App extends Component {
             if (!array.find(number => number === num)) array.push(num)
         }
 
-        // array = this.getSort(array);
-
+        array = this.getSort(array);
         this.setState({numbers: array})
     };
 
