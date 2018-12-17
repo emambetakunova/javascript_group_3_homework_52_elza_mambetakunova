@@ -1,20 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import './Render.css'
 
-class RenderContent extends Component {
-    render() {
+const Circle = props => {
         return (
-            <div className="renderNumber">
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-            </div>
+                <div className="circle">{props.number}</div>
+
         )
-    }
+    };
 
-}
 
-export default RenderContent;
+export default Circle;
